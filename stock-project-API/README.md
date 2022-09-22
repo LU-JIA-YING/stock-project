@@ -1,6 +1,5 @@
-# stock-project
+# stock-project(未實現損益API實作 - 通訊格式)
 (SpringBoot-MVC-Restful-MariaDB-SpringDataJPA-Query) + API XML
-### 未實現損益API實作 - 通訊格式
 
 ###### tags: `Homework`、`現股未實現損益`、`MariaDB`、`Spring Data JPA`、`@Query`
 
