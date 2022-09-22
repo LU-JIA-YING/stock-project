@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "9baf7548-4636-4ba1-bb1b-fc4f67ed4cc3",
+		"name": "Spring Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22524158"
+	},
+	"item": [
+		{
+			"name": "Find Unreal Detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"branchNo\":\"F62Z\",\r\n    \"custSeq\":\"03\",\r\n    \"stock\":\"2357\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/unreal/detail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"unreal",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Unreal Detail No Stock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"branchNo\":\"F62Z\",\r\n  \"custSeq\":\"03\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/unreal/detail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"unreal",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Unreal Sum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"branchNo\":\"F62Z\",\r\n    \"custSeq\":\"03\",\r\n    \"stock\":\"2357\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/unreal/sum",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"unreal",
+						"sum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Unreal Sum No Stock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"branchNo\":\"F62Z\",\r\n    \"custSeq\":\"04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/unreal/sum",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"unreal",
+						"sum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Hcmio And Tcnud",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tradeDate\":\"20220921\",\r\n    \"branchNo\":\"F62Z\",\r\n    \"custSeq\":\"03\",\r\n    \"docSeq\":\"CC003\",\r\n    \"stock\":\"6214\",\r\n    \"price\":81.5,\r\n    \"qty\":2000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/unreal/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"unreal",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Hcmio And Tcnud(Test Rollback)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tradeDate\":\"20220917\",\r\n    \"branchNo\":\"F62Z\",\r\n    \"custSeq\":\"03\",\r\n    \"docSeq\":\"ZZ010\",\r\n    \"stock\":\"6214\",\r\n    \"price\":81.5,\r\n    \"qty\":2000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/unreal/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"unreal",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Mstmb Stock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stock\": \"1101\",\r\n    \"curPrice\": 39.11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mstmb/updateCurPrice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mstmb",
+						"updateCurPrice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Unreal Detail Add profitRate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"branchNo\":\"F62Z\",\r\n  \"custSeq\":\"03\",\r\n  \"profitRateLowerLimit\":-10.46,\r\n  \"profitRateUpperLimit\":14.46\r\n}\r\n\r\n// 符合:-10<x<210\r\n// \"profitRateLowerLimit\": \"profitRateUpperLimit\":\r\n\r\n// {\r\n//   \"branchNo\":\"F62Z\",\r\n//   \"custSeq\":\"03\",\r\n//   \"stock\":\"2357\",\r\n//   \"profitRateLowerLimit\":-10.46,\r\n//   \"profitRateUpperLimit\":14.46\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/unreal/detail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"unreal",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Unreal Detail Sum Add profitRate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"branchNo\":\"F62Z\",\r\n  \"custSeq\":\"04\",\r\n  \"profitRateLowerLimit\":-53.46,\r\n  \"profitRateUpperLimit\":-12.46\r\n}\r\n// 符合 -53<x<-12\r\n// {\r\n//   \"branchNo\":\"F62Z\",\r\n//   \"custSeq\":\"04\",\r\n//   \"profitRateLowerLimit\":-10.46,\r\n//   \"profitRateUpperLimit\":14.46\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/unreal/sum",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"unreal",
+						"sum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Today Delivery Fee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"branchNo\":\"F62Z\",\r\n  \"custSeq\":\"04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/TodayDeliveryFee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"TodayDeliveryFee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Mstmb By Stock(Test Caching)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stock\": \"1101\"\r\n}\r\n\r\n// {\r\n//     \"stock\": \"1101\",\r\n//     \"curPrice\": 39.11\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mstmb/stock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mstmb",
+						"stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Stock (API)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://systexdemo.ddns.net:443/Quote/Stock.jsp?stock=1234,2330",
+					"protocol": "http",
+					"host": [
+						"systexdemo",
+						"ddns",
+						"net"
+					],
+					"port": "443",
+					"path": [
+						"Quote",
+						"Stock.jsp"
+					],
+					"query": [
+						{
+							"key": "stock",
+							"value": "1234,2330"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Xml By Stocks (API)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mstmb/stockxml?stock=2357,1101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mstmb",
+						"stockxml"
+					],
+					"query": [
+						{
+							"key": "stock",
+							"value": "2357,1101"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Stocks(API)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stock\": \"1101,2357\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mstmb/XmlByDocSeq",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mstmb",
+						"XmlByDocSeq"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
